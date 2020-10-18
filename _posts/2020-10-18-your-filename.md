@@ -1,5 +1,7 @@
 ---
-published: false
+layout: post
+title: This is my first blog entry!
+published: true
 ---
 ## दुसरी Post
 
