@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is my first blog entry!
+title: This is my second blog entry!
 published: true
 ---
 ## दुसरी Post
