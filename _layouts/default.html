@@ -5,38 +5,60 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/main.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <main class="container left-container">
+        <div class="row">
+            <!-- <section class="sidebar col-md-5 col-sm-12" style='background-image: url(/images/feature-san-fran.jpg);'> -->
+            <section class="sidebar col-md-5 col-sm-12" style='background-image: url(/images/14572372_350444651964468_7244377848428868658_n.jpg);'>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+                <div class="site-info">
+                    <div class="primary-info">
+                        <h1>श्रीपाद गोपिनाथ केळकर</h1>
+                        <p>माझे लिखाण व संस्क्रुत श्र्लोकांचा यथामति पद्यबद्ध मराठीतला स्वैर भावानुवाद...</p>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+                    </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+
+                    <div class="secondary-info">
+                        <p>
+                            <a class="btn btn-primary" href="https://www.facebook.com/shripadgopinath.kelkar/" target="_blank">Facebook</a>
+                        </p>
+                    </div>
+
+                </div>
+            </section><!-- end sidebar -->
+
+
+            <div class="col-md-7 col-sm-12 col-md-offset-5 main-content">
+                <div class="sub-nav">
+                    <a href="{{ site.baseurl }}/" class="select-posts active">Blog</a>
+                    <a href="{{ site.baseurl }}/about" class="select-categories">About</a>
+                    <a href="{{ site.baseurl }}/contact" class="select-categories">Contact</a>
+                </div>
+
+                <div class="home-page-posts animated fadeIn ">
+
+                        {{ content }}
+
+                </div><!-- Home page posts -->
+
+                <footer class="split-footer">
+                    <a href="{{ site.baseurl }}/">Blog</a>
+                    <i class="link-spacer"></i>
+                    <a href="{{ site.baseurl }}/about">About</a>
+                    <i class="link-spacer"></i>
+                    <a href="{{ site.baseurl }}/about">Contact</a>
+                </footer>
+            </div><!-- main content -->
+        </div>
+        <!--/row -->
+
+    </main>    
 
     <div class="wrapper-footer">
       <div class="container">
